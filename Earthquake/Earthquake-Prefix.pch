@@ -1,0 +1,22 @@
+//
+//  Earthquake-Prefix.pch
+//  Earthquake
+//
+//  Created by Marwan Wadea on 1/12/14.
+//  Copyright (c) 2014 Mazen Kasser. All rights reserved.
+//
+
+#ifndef Earthquake_Earthquake_Prefix_pch
+#define Earthquake_Earthquake_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+#import "Constants.h"
+#import <RestKit/CoreData.h>
+#import <RestKit/RestKit.h>
+#import "CoreData+MagicalRecord.h"
+#import "Singleton.h"
+#import "Constants.h"
+#import "Utilities.h"
+#import "MBProgressHUD.h"
+
+#endif

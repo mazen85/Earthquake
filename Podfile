@@ -1,0 +1,5 @@
+platform :ios, '6.0'
+pod 'FXReachability', '~> 1.1'
+pod 'MagicalRecord', '~> 2.2'
+pod 'MBProgressHUD', '~> 0.8'
+pod 'RestKit', '~> 0.22.0'

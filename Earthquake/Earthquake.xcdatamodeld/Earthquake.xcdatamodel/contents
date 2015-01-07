@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Earthquake" representedClassName="Earthquake" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="earthquakes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Quake" inverseName="earthquake" inverseEntity="Quake" syncable="YES"/>
+    </entity>
+    <entity name="Quake" representedClassName="Quake" syncable="YES">
+        <attribute name="depth" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="eqid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="magnitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="src" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timedate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="earthquake" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Earthquake" inverseName="earthquakes" inverseEntity="Earthquake" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Earthquake" positionX="-279" positionY="-126" width="128" height="73"/>
+        <element name="Quake" positionX="-56" positionY="-13" width="128" height="178"/>
+    </elements>
+</model>
