@@ -65,7 +65,7 @@
     else if (magnitude < 7.0 && magnitude >= 6.0) {
         colourIntensity = ORANGE_COLOR;
     }
-    else if (magnitude > 7.0) {
+    else if (magnitude >= 7.0) {
         colourIntensity = RED_COLOR;
     }
     
